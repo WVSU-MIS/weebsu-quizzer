@@ -4,6 +4,8 @@ import streamlit as st
 import altair as alt
 import openai
 import hashlib
+import random
+import string
 
 openai.api_key = st.secrets["API_key"]
 
@@ -50,8 +52,23 @@ def app():
     if st.button('Submit'):
         output = perform_task(input_topic, input_competencies)
     
+    random_string = ''.join(random.choices(string.ascii_letters + string.digits, k=5))
+    filename = 'quiz-' + random_string + '.csv'
+    
+    # save the string to a CSV file
+    with open(filename, 'w') as file:
+        file.write(output)
+        
+    # Generate a download link for the CSV file
+    with open(filename, 'rb') as file:
+        csv_data = file.read()
+
+    st.download_button(label='Download CSV', data=csv_data, \
+                       file_name='output.csv', mime='text/csv')
+    
+    st.write('\n\n\nDisclaimer: Weebsu may produce inconsistent file format.')
     st.write('\n\n\n© 2023 West Visayas State University - Management Information System Office.')
-    st.write('\n\n\nDisclaimer: Weebsu may produce inaccurate information about people, places, or facts especially if the question is outside the scope of topics it was trained on.')
+
     text = "*WVSU at the forefront of AI-research in Western Visayas.*"
     st.markdown(text)
 
