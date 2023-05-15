@@ -68,7 +68,7 @@ def app():
     
     st.write('Next steps:')
     st.write('Download the CSV file and upload to your Google Drive')
-    st.write('Open the file using Google Sheets and check that is formatted correct. See image below.')
+    st.write('Open the file using Google Sheets and check that it is formatted correctly. See image below.')
     st.write('Make sure the columns are as follows: Question, Option A, Option B, Option C, Option D, Answer. Add a column ad the end "Points". Put the points for each item. See image below.')
     st.write('By using "Form Builder for Sheets", you can save time by directly creating a Google Form from your Google Sheet exam questions, without having to manually enter them into the form.')
     st.write('Ask chatGPT for the steps on how to convert a GSheets exam to Google Form.')
