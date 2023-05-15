@@ -40,7 +40,7 @@ def app():
     
     # Create a multiline text field
     topic = "Neural Networks, Deep Learning Tensorflow and Keras"
-    input_topic = st.text('Input the topic of the quiz:', topic)
+    input_topic = st.text_input('Input the topic of the (replace the sample): ', topic)
     competencies = "1. Understanding of neural network architecture and principles, \
       such as feedforward and backpropagation \
       \n2. Knowledge of activation functions, loss functions, and optimization algorithms\
