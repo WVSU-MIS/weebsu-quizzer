@@ -66,6 +66,7 @@ def app():
         st.download_button(label='Download CSV', data=csv_data, \
                            file_name=filename, mime='text/csv')
     
+    st.write('Next steps:')
     st.write('Download the CSV file and upload to your Google Drive')
     st.write('Open the file using Google Sheets and check that is formatted correct. See image below.')
     st.write('Make sure the columns are as follows: Question, Option A, Option B, Option C, Option D, Answer. Add a column ad the end "Points". Put the points for each item. See image below.')
