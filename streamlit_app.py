@@ -41,8 +41,8 @@ def app():
     # Create a multiline text field
     topic = "Neural Networks, Deep Learning Tensorflow and Keras"
     input_topic = st.text_input('Input the topic (replace the sample below): ', topic)
-    competencies = "1. Understanding of neural network architecture and principles, \
-      such as feedforward and backpropagation \
+    competencies = "1. Understanding of neural network architecture and principles,\
+      such as feedforward and backpropagation\
       \n2. Knowledge of activation functions, loss functions, and optimization algorithms\
       \n3. Familiarity with deep learning frameworks, such as TensorFlow, PyTorch, and Keras"
     input_competencies = st.text_area('Input the competencies (replace the sample below):', competencies)   
