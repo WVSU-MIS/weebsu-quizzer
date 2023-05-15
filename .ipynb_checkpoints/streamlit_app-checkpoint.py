@@ -9,7 +9,7 @@ import string
 
 openai.api_key = st.secrets["API_key"]
 
-def pwerform_task(input_topic, input_competencies): 
+def perform_task(input_topic, input_competencies): 
     response = openai.ChatCompletion.create(
       model="gpt-3.5-turbo",
       messages=[
