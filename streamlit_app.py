@@ -64,7 +64,7 @@ def app():
             csv_data = file.read()
 
         st.download_button(label='Download CSV', data=csv_data, \
-                           file_name='output.csv', mime='text/csv')
+                           file_name=filename, mime='text/csv')
     
     st.write('\n\n\nDisclaimer: Weebsu may produce inconsistent file format.')
     st.write('\n\n\n© 2023 West Visayas State University - Management Information System Office.')
