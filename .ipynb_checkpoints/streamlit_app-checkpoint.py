@@ -45,7 +45,7 @@ def app():
       such as feedforward and backpropagation \
       \n2. Knowledge of activation functions, loss functions, and optimization algorithms\
       \n3. Familiarity with deep learning frameworks, such as TensorFlow, PyTorch, and Keras"
-    input_competencies = st.text_area('Input the competencies (replace the sample below):', competencies, height=10)   
+    input_competencies = st.text_area('Input the competencies (replace the sample below):', competencies)   
 
     # Display the text when the user submits the form
     if st.button('Submit'):
