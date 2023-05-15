@@ -71,7 +71,7 @@ def app():
     st.write('Make sure the columns are as follows: Question, Option A, Option B, Option C, Option D, Answer. Add a column ad the end "Points". Put the points for each item. See image below.')
     st.write('By using "Form Builder for Sheets", you can save time by directly creating a Google Form from your Google Sheet exam questions, without having to manually enter them into the form.')
     st.write('Ask chatGPT for the steps on how to convert a GSheets exam to Google Form.')
-    st.write('Click on the link below to try a Google Form exam created using the precedure described above.)
+    st.write('Click on the link below to try a Google Form exam created using the precedure described above.')
     st.write('\n\n\nDisclaimer: Weebsu may produce inconsistent file format.')
     st.write('\n\n\n© 2023 West Visayas State University - Management Information System Office.')
 
