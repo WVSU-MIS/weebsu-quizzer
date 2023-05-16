@@ -71,7 +71,7 @@ def app():
     st.write('Open the file using Google Sheets and check that it is formatted correctly. See image below.')
     st.write('Make sure the columns are as follows: Question, Option A, Option B, Option C, Option D, Answer. Add a column at the end and name it "Points". Put the point for each item. See image below.')
     st.write('By using "Form Builder for Sheets", you can save time by directly creating a Google Form from your Google Sheet exam questions, without having to manually enter them into the form.')
-    st.write('Ask chatGPT for the steps on how to convert a GSheets exam to Google Form.')
+    st.write('Ask chatGPT for the steps on "steps on how to convert a GSheets exam to Google Form using Form Builder for Sheets"')
     st.write('Click the link to view a video demo of Form Builder for  Sheets.')
     st.markdown("[Converting from Google Sheet to Google Form](https://www.loom.com/share/f49dca4593ad416086db65ed069fbacf)")
     st.write('Click on the link below to try a Google Form exam created using the precedure described above.')
