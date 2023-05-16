@@ -68,7 +68,7 @@ def app():
     
     st.write('Next steps:')
     st.write('Download the CSV file and upload to your Google Drive')
-    st.write('Open the file using Google Sheets and check that it is formatted correctly. See image below.')
+    st.write('Open the file using Google Sheets and check that it is formatted correctly.')
     st.write('Make sure the columns are as follows: Question, Option A, Option B, Option C, Option D, Answer. Add a column at the end and name it "Points". Put the point for each item. See image below.')
     image = "GoogleSheetFormat.jpg"
     st.image(image, caption='Google Sheet Exam Format')
